@@ -111,3 +111,69 @@ header h1{
 .btn-regresar:hover{
     transform:scale(1.1);
 }
+
+.menu-secciones{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    padding:20px;
+    background:white;
+}
+
+.menu-secciones a{
+    text-decoration:none;
+    background:#1d3557;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.menu-secciones a:hover{
+    background:#457b9d;
+    transform:translateY(-3px);
+}
+
+.info-section{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+.info-section h2{
+    color:#1d3557;
+    margin-bottom:15px;
+}
+
+.info-section p{
+    color:#444;
+    line-height:1.6;
+}
+
+.tabla-estadisticas{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+.tabla-estadisticas th,
+.tabla-estadisticas td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+.tabla-estadisticas th{
+    background:#1d3557;
+    color:white;
+}
+
+.tabla-estadisticas tr:nth-child(even){
+    background:#f5f5f5;
+}
