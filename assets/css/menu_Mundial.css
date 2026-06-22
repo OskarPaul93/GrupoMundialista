@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    font-family:'Segoe UI',sans-serif;
+    background-image:url("../img/2026.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    position:relative;
+    overflow-x:hidden;
+}
+
+body::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    );
+    z-index:0;
+}
+
+.titulo-principal{
+    position:absolute;
+    top:25px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:2;
+    color:white;
+    text-align:center;
+    font-size:4rem;
+    font-weight:900;
+    text-shadow:
+    0 0 15px rgba(255,255,255,.3),
+    0 0 30px rgba(255,215,0,.4);
+}
+
+.contenedor{
+    position:relative;
+    z-index:2;
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 60px 40px;
+}
+
+.menu-izquierdo,
+.menu-derecho{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.grupo{
+    width:240px;
+    height:75px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:white;
+    font-size:1.2rem;
+    font-weight:bold;
+    border-radius:18px;
+    background:rgba(0,0,0,.45);
+    backdrop-filter:blur(8px);
+    border:1px solid rgba(255,255,255,.2);
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+    transition:.35s;
+}
+
+.grupo i{
+    color:#f4c542;
+    font-size:1.4rem;
+}
+
+.grupo:hover{
+    background:#f4c542;
+    color:black;
+    transform:
+    translateY(-5px)
+    scale(1.05);
+}
+
+.grupo:hover i{
+    color:black;
+}
+
+/* TABLET */
+@media (max-width: 992px){
+    .titulo-principal{
+        font-size:3rem;
+    }
+    .contenedor{
+        padding:140px 25px 30px;
+    }
+    .grupo{
+        width:200px;
+        height:70px;
+        font-size:1rem;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 768px){
+    .titulo-principal{
+        font-size:2rem;
+        width:90%;
+    }
+    .contenedor{
+        flex-direction:column;
+        justify-content:flex-start;
+        gap:20px;
+        padding-top:130px;
+        padding-bottom:30px;
+    }
+    .menu-izquierdo,
+    .menu-derecho{
+        width:100%;
+        align-items:center;
+    }
+    .grupo{
+        width:90%;
+        max-width:350px;
+        height:65px;
+        font-size:1rem;
+    }
+}
+
+/* CELULARES PEQUEÑOS */
+@media (max-width: 480px){
+    .titulo-principal{
+        font-size:1.7rem;
+    }
+    .grupo{
+        height:60px;
+        font-size:.95rem;
+    }
+    .grupo i{
+        font-size:1.1rem;
+    }
+}
