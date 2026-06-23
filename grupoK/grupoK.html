@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo K - Mundial</title>
 
-    <link rel="stylesheet" href="grupoK.css">
-    <link rel="stylesheet" href="../GrupoA/assets/css/grupoA.css">
+    <title>Grupo K - Mundial 2026</title>
+
+    <link rel="stylesheet" href="assets/css/grupoK.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
+
+    <!-- =========================
+         PRELOADER
+    ========================== -->
 
     <div id="preloader">
         <div class="loader-content">
 
-            <img src="../GrupoA/assets/img/logo.png" alt="Logo Mundial">
+            <img src="assets/img/logo.png" alt="Logo Mundial">
 
-            <h3>Cargando Grupo A...</h3>
+            <h3>Cargando Grupo K...</h3>
 
             <div class="barra">
                 <div class="progreso"></div>
@@ -24,181 +31,284 @@
 
         </div>
     </div>
-    
-    <a href="../index.html" class="btn-regresar">
-    ⚽ Grupos
-    </a>
 
-    <header>
-        <h1>Grupo K</h1>
-        <p>Información de los equipos participantes</p>
-    </header>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
 
-    <nav class="menu-secciones">   
-        <a href="#estadios">Estadios</a>
-        <a href="#ciudades">Ciudades</a>
-        <a href="#historia">Historia</a>
-        <a href="#estadisticas">Estadísticas</a>
-        <a href="#horarios">Horarios</a>
-        <a href="#curiosidades">Curiosidades</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="assets/img/logo.png" alt="Logo" width="45" height="45">
+                Grupo K Mundial 2026
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipos">Selecciones</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tabla">Tabla</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#partidos">Partidos</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
     </nav>
 
-    <main id="grupos">
+    <!-- =========================
+         HERO
+    ========================== -->
 
-    <section id="grupoK" class="grupo">
-        <h2>Grupo K</h2>
+    <header class="hero">
 
-        <div id="teams-container"></div>
+        <div class="overlay">
+
+            <div class="container text-center text-white">
+
+                <h1>GRUPO K</h1>
+
+                <p class="lead mt-3">
+                    Colombia, Republica del Congo, Portugal y Uzbequiztan luchan por clasificar
+                    en el Mundial 2026.
+                </p>
+
+                <div id="contador"></div>
+
+                <a href="#equipos" class="btn btn-warning mt-4 px-4 py-2">
+                    Ver Selecciones
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- =========================
+         EQUIPOS
+    ========================== -->
+
+    <section id="equipos" class="container py-5">
+
+        <h2 class="text-center mb-5">Selecciones Participantes</h2>
+
+        <div class="row g-4">
+
+            <!-- Colombia -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card equipo-card mexico h-100">
+                    <img src="https://flagcdn.com/w320/co.png" alt="Colombia">
+                    <div class="card-body text-center">
+                        <h4>Colombia</h4>
+                        <p>Selección sudamericana con talento ofensivo y buena técnica.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Republica del congo -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card equipo-card corea h-100">
+                    <img src="https://flagcdn.com/w320/cd.png" alt="Congo">
+                    <div class="card-body text-center">
+                        <h4>Republica del Congo</h4>
+                        <p>Selección africana con juego físico y en crecimiento competitivo. </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portugal -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card equipo-card chequia h-100">
+                    <img src="https://flagcdn.com/w320/pt.png" alt="Prtugal">
+                    <div class="card-body text-center">
+                        <h4>Portugal</h4>
+                        <p>selección europea histórica con gran técnica, talento ofensivo y tradición ganadora.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Uzbequiztan -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card equipo-card sudafrica h-100">
+                    <img src="https://flagcdn.com/w320/uz.png" alt="Uz">
+                    <div class="card-body text-center">
+                        <h4>Uzbequiztan</h4>
+                        <p>selección asiática en crecimiento con disciplina táctica y desarrollo competitivo.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
-    <section id="estadios" class="info-section">
-        <h2>🏟 Estadios</h2>
+    <!-- =========================
+         TABLA
+    ========================== -->
 
-        <h3>Houston Stadium (Estados Unidos)</h3>
-        <p>
-            Sede de los encuentros Portugal vs RD Congo y Portugal vs Uzbekistán.
-            Es uno de los estadios más modernos del Mundial 2026.
-        </p>
+    <section id="tabla" class="container pb-5">
 
-        <h3>Estadio Azteca - Ciudad de México</h3>
-        <p>
-            Escenario del partido Uzbekistán vs Colombia.
-            Es el único estadio que ha recibido tres Copas del Mundo.
-        </p>
+        <h2 class="text-center mb-4">Tabla de Posiciones</h2>
 
-        <h3>Estadio Guadalajara (Zapopan)</h3>
-        <p>
-            Alberga el encuentro Colombia vs RD Congo.
-        </p>
+        <div class="table-responsive">
 
-        <h3>Miami Stadium</h3>
-        <p>
-            Sede del esperado partido Colombia vs Portugal.
-        </p>
+            <table class="table table-striped table-hover text-center">
 
-        <h3>Atlanta Stadium</h3>
-        <p>
-            Recibe el encuentro RD Congo vs Uzbekistán.
-        </p>
+                <thead class="table-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Selección</th>
+                        <th>PJ</th>
+                        <th>PG</th>
+                        <th>PE</th>
+                        <th>PP</th>
+                        <th>PTS</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Colombia</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Republica del Congo</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>3</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Portugal</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Uzbequiztan</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
     </section>
 
-    <section id="ciudades" class="info-section">
-        <h2>🌎 Ciudades</h2>
+    <!-- =========================
+         PARTIDOS
+    ========================== -->
 
-        <p><strong>Houston (EE.UU.)</strong>: ciudad multicultural y una de las principales sedes del torneo.</p>
+    <section id="partidos" class="container pb-5">
 
-        <p><strong>Ciudad de México (México)</strong>: capital mexicana y hogar del histórico Estadio Azteca.</p>
+        <h2 class="text-center mb-4">Calendario de Partidos</h2>
 
-        <p><strong>Guadalajara (México)</strong>: reconocida por su tradición futbolística.</p>
+        <div class="row g-3">
 
-        <p><strong>Miami (EE.UU.)</strong>: una de las ciudades con mayor presencia de aficionados latinoamericanos.</p>
+            <div class="col-md-6">
+                <div class="card p-3">
+                    🇵🇹 Portugal vs 🇨🇩 DR Congo
+                </div>
+            </div>
 
-        <p><strong>Atlanta (EE.UU.)</strong>: sede moderna que alberga eventos deportivos internacionales.</p>
+            <div class="col-md-6">
+                <div class="card p-3">
+                    🇺🇿 Uzbekistán vs 🇨🇴 Colombia
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card p-3">
+                    🇵🇹 Portugal vs 🇺🇿 Uzbekistán
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card p-3">
+                    🇨🇴 Colombia vs 🇨🇩 DR Congo
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card p-3">
+                    🇵🇹 Portugal vs 🇨🇴 Colombia
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card p-3">
+                    🇨🇩 DR Congo vs 🇺🇿 Uzbekistán
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
-    <section id="historia" class="info-section">
-        <h2>📖 Historia de los Equipos</h2>
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
-        <h3>🇨🇴 Colombia</h3>
-        <p>
-            Debutó en los Mundiales en 1962.
-            Su mejor participación fue en Brasil 2014,
-            donde alcanzó los cuartos de final con James Rodríguez como goleador.
+    <footer class="text-center p-4 bg-dark text-white">
+
+        <p class="mb-0">
+            Grupo K Mundial 2026 © Todos los derechos reservados
         </p>
 
-        <h3>🇵🇹 Portugal</h3>
-        <p>
-            Participó por primera vez en 1966,
-            obteniendo el tercer lugar con Eusébio como gran figura.
-            En los últimos años ha sido una de las selecciones más fuertes de Europa.
-        </p>
+    </footer>
 
-        <h3>🇨🇩 RD Congo</h3>
-        <p>
-            Participó por primera vez en Alemania 1974 bajo el nombre de Zaire.
-            Su clasificación a 2026 representa su regreso a un Mundial después de más de cinco décadas.
-        </p>
-
-        <h3>🇺🇿 Uzbekistán</h3>
-        <p>
-            Consiguió la primera clasificación mundialista de su historia para 2026,
-            convirtiéndose en una de las revelaciones del fútbol asiático.
-        </p>
-    </section>
-
-    <section id="estadisticas" class="info-section">
-        <h2>📊 Estadísticas</h2>
-
-        <table class="tabla-estadisticas">
-            <tr>
-                <th>Equipo</th>
-                <th>Participaciones</th>
-                <th>Mejor Resultado</th>
-            </tr>
-
-            <tr>
-                <td>Portugal</td>
-                <td>9</td>
-                <td>3.º lugar (1966)</td>
-            </tr>
-
-            <tr>
-                <td>Colombia</td>
-                <td>7</td>
-                <td>Cuartos de final (2014)</td>
-            </tr>
-
-            <tr>
-                <td>RD Congo</td>
-                <td>2</td>
-                <td>Fase de grupos</td>
-            </tr>
-
-            <tr>
-                <td>Uzbekistán</td>
-                <td>1</td>
-                <td>Debutante</td>
-            </tr>
-        </table>
-    </section>
-
-    <section id="horarios" class="info-section">
-        <h2>⏰ Horarios de los Encuentros</h2>
-
-        <ul>
-            <li>17 junio: Portugal vs RD Congo - Houston</li>
-            <li>17 junio: Uzbekistán vs Colombia - Ciudad de México</li>
-            <li>23 junio: Portugal vs Uzbekistán - Houston</li>
-            <li>23 junio: Colombia vs RD Congo - Guadalajara</li>
-            <li>27 junio: Colombia vs Portugal - Miami</li>
-            <li>27 junio: RD Congo vs Uzbekistán - Atlanta</li>
-        </ul>
-    </section>
-
-    <section id="curiosidades" class="info-section">
-        <h2>🤔 Curiosidades</h2>
-
-        <ul>
-            <li>Cristiano Ronaldo disputa un Mundial histórico con Portugal.</li>
-
-            <li>Uzbekistán juega por primera vez una Copa del Mundo.</li>
-
-            <li>RD Congo regresa a un Mundial después de más de 50 años.</li>
-
-            <li>James Rodríguez fue el máximo goleador del Mundial 2014.</li>
-
-            <li>Portugal y Colombia son considerados los favoritos para avanzar a la siguiente ronda.</li>
-
-            <li>El partido Colombia vs Portugal es considerado el encuentro más atractivo del Grupo K.</li>
-        </ul>
-    </section>
-
-
-    </main>
-
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../GrupoA/assets/js/grupoA.js"></script>
-    <script src="grupoK.js"></script>
+
+    <!-- JS -->
+    <script src="assets/js/grupoK.js"></script>
 
 </body>
+
 </html>
