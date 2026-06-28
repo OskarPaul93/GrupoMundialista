@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grupo H</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(to bottom,#4db8ff,#0077c8);
+}
+
+.grupo{
+    width:400px;
+    text-align:center;
+}
+
+h1{
+    color:white;
+    font-size:50px;
+    font-weight:bold;
+    font-style:italic;
+    margin-bottom:50px;
+    text-shadow:2px 2px 5px rgba(0,0,0,.3);
+}
+
+.equipos{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+}
+
+.equipo{
+    transition:0.3s;
+}
+
+.equipo:hover{
+    transform:scale(1.1);
+}
+
+.equipo img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    object-fit:cover;
+    box-shadow:0 0 10px rgba(255,255,255,.5);
+}
+
+.equipo p{
+    color:white;
+    margin-top:10px;
+    font-weight:bold;
+    font-size:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="grupo">
+
+    <h1>GRUPO H</h1>
+
+    <div class="equipos">
+
+        <div class="equipo">
+            <img src="https://flagcdn.com/w160/es.png" alt="España">
+            <p>ESPAÑA</p>
+        </div>
+
+        <div class="equipo">
+            <img src="https://flagcdn.com/w160/uy.png" alt="Uruguay">
+            <p>URUGUAY</p>
+        </div>
+
+        <div class="equipo">
+            <img src="https://flagcdn.com/w160/sa.png" alt="Arabia Saudita">
+            <p>ARABIA SAUDITA</p>
+        </div>
+
+        <div class="equipo">
+            <img src="https://flagcdn.com/w160/cv.png" alt="Cabo Verde">
+            <p>CABO VERDE</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+const equipos = document.querySelectorAll(".equipo");
+
+equipos.forEach(equipo => {
+    equipo.addEventListener("click", () => {
+        alert("Seleccionaste " + equipo.innerText);
+    });
+});
+</script>
+
+</body>
+</html>

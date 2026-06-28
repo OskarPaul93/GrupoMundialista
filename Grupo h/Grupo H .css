@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* ENCABEZADO */
+header{
+    background:#1f3d67;
+    color:white;
+    text-align:center;
+    padding:25px;
+    position:relative;
+}
+
+header h1{
+    font-size:50px;
+    margin-bottom:5px;
+}
+
+header p{
+    font-size:18px;
+}
+
+/* BOTON INICIO */
+.inicio{
+    position:absolute;
+    left:20px;
+    top:25px;
+    background:white;
+    color:#333;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:bold;
+    box-shadow:0 3px 8px rgba(0,0,0,.2);
+}
+
+.inicio:hover{
+    transform:scale(1.05);
+}
+
+/* TITULO */
+.titulo-grupo{
+    text-align:center;
+    margin-top:30px;
+    font-size:35px;
+    color:#1f3d67;
+}
+
+/* CONTENEDOR */
+.contenedor{
+    max-width:1400px;
+    margin:auto;
+    padding:40px;
+}
+
+/* TARJETAS */
+.tarjetas{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.tarjeta{
+    width:300px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.tarjeta:hover{
+    transform:translateY(-10px);
+}
+
+.tarjeta img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.info{
+    padding:20px;
+}
+
+.info h2{
+    color:#1f3d67;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.info p{
+    margin-bottom:10px;
+    color:#444;
+    font-size:17px;
+}
+
+.info strong{
+    color:#222;
+}
+
+.info-pais{
+    background:white;
+    margin-top:40px;
+    padding:20px;
+    border-radius:15px;
+    width:90%;
+    max-width:500px;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+.info-pais h2{
+    color:#0077c8;
+    margin-bottom:15px;
+}
+
+.info-pais p{
+    margin:8px 0;
+}
