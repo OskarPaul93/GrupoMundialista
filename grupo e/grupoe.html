@@ -1,53 +1,302 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo E - Mundial</title>
 
-    <link rel="stylesheet" href="grupoe.css">
-    <link rel="stylesheet" href="../GrupoA/assets/css/grupoA.css">
+    <title>Grupo E - Mundial 2026</title>
+
+    <link rel="stylesheet" href="assets/css/grupoA.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
 
-        <div id="preloader">
-            <div class="loader-content">
+    <!-- =========================
+         PRELOADER
+    ========================== -->
 
-                <img src="../GrupoA/assets/img/logo.png" alt="Logo Mundial">
+    <div id="preloader">
+        <div class="loader-content">
 
-                <h3>Cargando Grupo A...</h3>
+            <img src="assets/img/logo.png" alt="Logo Mundial">
 
-                <div class="barra">
-                    <div class="progreso"></div>
-                </div>
+            <h3>Cargando Grupo E...</h3>
+
+            <div class="barra">
+                <div class="progreso"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="assets/img/logo.png" alt="Logo" width="45" height="45">
+                Grupo E Mundial 2026
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipos">Selecciones</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tabla">Tabla</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#partidos">Partidos</a>
+                    </li>
+
+                </ul>
 
             </div>
-        </div>
-    
-    <a href="../index.html" class="btn-regresar">
-    🏠 Inicio
-</a>
 
-    <header>
-        <h1>Grupo E </h1>
-        <p>Información de los equipos participantes</p>
+        </div>
+
+    </nav>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <header class="hero">
+
+        <div class="overlay">
+
+            <div class="container text-center text-white">
+
+                <h1>GRUPO E</h1>
+
+                <p class="lead mt-3">
+                    Ecuador, Alemania, Costa de Marfil y Curazao luchan por la clasificación 
+                    en el Mundial 2026.
+                </p>
+
+                <div id="contador"></div>
+
+                <a href="#equipos" class="btn btn-warning mt-4 px-4 py-2">
+                    Ver Selecciones
+                </a>
+
+            </div>
+
+        </div>
+
     </header>
 
-    <main id="grupos">
+    <!-- =========================
+         EQUIPOS
+    ========================== -->
 
-    <section id="grupoE" class="grupo">
-        <h2>Grupo E </h2>
+    <section id="equipos" class="container py-5">
 
-        <div id="teams-container"></div>
+        <h2 class="text-center mb-5">Selecciones Participantes</h2>
+
+        <div class="row g-4">
+
+            <!-- Ecuador -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card equipo-card ecuador h-100">
+                    <img src="https://flagcdn.com/w320/ec.png" alt="Ecuador">
+                    <div class="card-body text-center">
+                        <h4>Ecuador</h4>
+                        <p>Fuerza de CONMEBOL con una plantilla joven, veloz y de gran despliegue físico.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alemania -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card equipo-card alemania h-100">
+                    <img src="https://flagcdn.com/w320/de.png" alt="Alemania">
+                    <div class="card-body text-center">
+                        <h4>Alemania</h4>
+                        <p>Tetracampeona del mundo y potencia de la UEFA con jerarquía histórica.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Costa de Marfil -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card equipo-card costa-marfil h-100">
+                    <img src="https://flagcdn.com/w320/ci.png" alt="Costa de Marfil">
+                    <div class="card-body text-center">
+                        <h4>Costa de Marfil</h4>
+                        <p>Referente de la CAF caracterizado por su potencia física y velocidad de juego.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curazao -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card equipo-card curazao h-100">
+                    <img src="https://flagcdn.com/w320/cw.png" alt="Curazao">
+                    <div class="card-body text-center">
+                        <h4>Curazao</h4>
+                        <p>Representante de CONCACAF buscando dar la sorpresa en su participación.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
-    </main>
+    <!-- =========================
+         TABLA
+    ========================== -->
 
-    
+    <section id="tabla" class="container pb-5">
+
+        <h2 class="text-center mb-4">Tabla de Posiciones</h2>
+
+        <div class="table-responsive">
+
+            <table class="table table-striped table-hover text-center">
+
+                <thead class="table-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Selección</th>
+                        <th>PJ</th>
+                        <th>PG</th>
+                        <th>PE</th>
+                        <th>PP</th>
+                        <th>PTS</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Ecuador</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Alemania</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Costa de Marfil</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Curazao</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         PARTIDOS
+    ========================== -->
+
+    <section id="partidos" class="container pb-5">
+
+        <h2 class="text-center mb-4">Calendario de Partidos</h2>
+
+        <div class="row g-3">
+
+            <div class="col-md-6">
+                <div class="card p-3">
+                    🇪🇨 Ecuador vs 🇩🇪 Alemania
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card p-3">
+                    🇨🇮 Costa de Marfil vs 🇨🇼 Curazao
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card p-3">
+                    🇪🇨 Ecuador vs 🇨🇼 Curazao
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card p-3">
+                    🇩🇪 Alemania vs 🇨🇮 Costa de Marfil
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="text-center p-4 bg-dark text-white">
+
+        <p class="mb-0">
+            Grupo E Mundial 2026 © Todos los derechos reservados
+        </p>
+
+    </footer>
+
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../GrupoA/assets/js/grupoA.js"></script>
-    <script src="grupoe.js"></script>
+
+    <!-- JS -->
+    <script src="assets/js/grupoA.js"></script>
 
 </body>
+
 </html>
