@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
 });
 
 /* ===================================
-   CONTADOR / ESTADO MUNDIAL 2026
+   CONTADOR MUNDIAL 2026
 =================================== */
 
 const fechaMundial = new Date("June 11, 2026 00:00:00").getTime();
@@ -30,33 +30,28 @@ const actualizarContador = () => {
 
     const distancia = fechaMundial - ahora;
 
+    const dias = Math.floor(
+        distancia / (1000 * 60 * 60 * 24)
+    );
+
+    const horas = Math.floor(
+        (distancia % (1000 * 60 * 60 * 24))
+        / (1000 * 60 * 60)
+    );
+
+    const minutos = Math.floor(
+        (distancia % (1000 * 60 * 60))
+        / (1000 * 60)
+    );
+
+    const segundos = Math.floor(
+        (distancia % (1000 * 60))
+        / 1000
+    );
+
     const contador = document.getElementById("contador");
 
     if (contador) {
-        // Si el Mundial ya comenzó o está en curso, mostramos el estado actual
-        if (distancia < 0) {
-            contador.innerHTML = `⚽ ¡El Mundial 2026 está en marcha! Sigue la acción del Grupo K`;
-            return;
-        }
-
-        const dias = Math.floor(
-            distancia / (1000 * 60 * 60 * 24)
-        );
-
-        const horas = Math.floor(
-            (distancia % (1000 * 60 * 60 * 24))
-            / (1000 * 60 * 60)
-        );
-
-        const minutos = Math.floor(
-            (distancia % (1000 * 60 * 60))
-            / (1000 * 60)
-        );
-
-        const segundos = Math.floor(
-            (distancia % (1000 * 60))
-            / 1000
-        );
 
         contador.innerHTML =
             `🏆 ${dias} días ${horas}h ${minutos}m ${segundos}s`;
@@ -208,9 +203,8 @@ tarjetas.forEach(tarjeta => {
 
 console.log(`
 ====================================
-⚽ GRUPO E - MUNDIAL 2026
+⚽ GRUPO A - MUNDIAL 2026
 ====================================
-Ecuador 🇪🇨 | Alemania 🇩🇪 | Curazao 🇨🇼 | Costa de Marfil 🇨🇮
 
 Proyecto desarrollado con:
 
@@ -219,6 +213,6 @@ Proyecto desarrollado con:
 ✅ Bootstrap 5
 ✅ JavaScript
 
-¡Bienvenido al Grupo E revisado!
+Bienvenido al Grupo A.
 ====================================
 `);
