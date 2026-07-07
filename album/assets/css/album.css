@@ -1,0 +1,366 @@
+/* ===========================
+   CONFIGURACIÓN GENERAL
+=========================== */
+
+body{
+
+    background:#f4f6f9;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+
+/* ===========================
+   TITULO
+=========================== */
+
+header h1{
+
+    color:#111;
+    font-size:2.5rem;
+
+}
+
+
+
+/* ===========================
+   TARJETAS DE ESTADISTICAS
+=========================== */
+
+
+.card{
+
+    border:none;
+    border-radius:15px;
+
+}
+
+
+
+/* ===========================
+   CONTENEDOR ALBUM
+=========================== */
+
+
+#album{
+
+    padding-bottom:50px;
+
+}
+
+
+
+/* ===========================
+   CROMO
+=========================== */
+
+
+.card-cromo{
+
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+
+    transition:.3s;
+
+    animation:entrada .6s ease;
+
+
+}
+
+
+
+
+.card-cromo:hover{
+
+
+    transform:translateY(-5px) scale(1.02);
+
+
+}
+
+
+
+
+.card-cromo img{
+
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+
+}
+
+
+
+
+
+.card-cromo .contenido{
+
+
+    padding:20px;
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.card-cromo h3{
+
+
+    font-size:1.4rem;
+
+    font-weight:bold;
+
+
+}
+
+
+
+.card-cromo p{
+
+
+    margin:5px;
+
+    color:#555;
+
+
+}
+
+
+
+/* BANDERA */
+
+
+.bandera{
+
+
+    width:40px!important;
+
+    height:25px!important;
+
+    object-fit:cover!important;
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+
+
+/* ===========================
+   BOTON DESBLOQUEAR
+=========================== */
+
+
+.btn-desbloquear{
+
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:20px;
+
+    background:#ffc107;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+
+}
+
+
+.btn-desbloquear:hover{
+
+
+    transform:scale(1.05);
+
+
+}
+
+
+
+
+
+
+/* ===========================
+   CROMO BLOQUEADO
+=========================== */
+
+
+.bloqueado{
+
+
+    filter:grayscale(100%) blur(2px);
+
+
+}
+
+
+
+
+
+
+/* ===========================
+   ANIMACIÓN ENTRADA
+=========================== */
+
+
+@keyframes entrada{
+
+
+    from{
+
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+
+    }
+
+
+    to{
+
+
+        opacity:1;
+
+        transform:translateY(0);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   ANIMACIÓN DESBLOQUEO
+=========================== */
+
+
+.flash{
+
+
+    animation:flash .8s ease;
+
+
+}
+
+
+
+@keyframes flash{
+
+
+    0%{
+
+
+        opacity:.3;
+
+
+    }
+
+
+    50%{
+
+
+        opacity:1;
+
+
+        transform:scale(1.05);
+
+
+    }
+
+
+    100%{
+
+
+        opacity:1;
+
+
+        transform:scale(1);
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   FILTROS
+=========================== */
+
+
+input,
+select{
+
+
+    border-radius:15px!important;
+
+    padding:12px!important;
+
+
+}
+
+
+
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+
+@media(max-width:768px){
+
+
+    header h1{
+
+
+        font-size:2rem;
+
+
+    }
+
+
+    .card-cromo img{
+
+
+        height:220px;
+
+
+    }
+
+
+}
