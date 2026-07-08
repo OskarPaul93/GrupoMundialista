@@ -658,6 +658,294 @@ const jugadoresJuego = [
         }
 
     ]
+},
+
+{
+    id:10,
+    nombre:"Cristiano Ronaldo",
+    pais:"Portugal",
+    probabilidad:10,
+    urlImagen:"img/cristiano.jpg",
+
+    preguntas:[
+
+        {
+            pregunta:"¿De qué país es Cristiano Ronaldo?",
+            opciones:["Portugal","España","Brasil","Italia"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Cuál es la posición de Cristiano Ronaldo?",
+            opciones:["Portero","Delantero","Defensa","Centrocampista"],
+            correcta:1
+        },
+
+        {
+            pregunta:"¿Qué selección representa?",
+            opciones:["España","Portugal","Francia","Brasil"],
+            correcta:1
+        },
+
+        {
+            pregunta:"¿Qué número ha utilizado durante gran parte de su carrera?",
+            opciones:["7","9","10","11"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Qué pie utiliza principalmente?",
+            opciones:["Derecho","Izquierdo","Ambos","Ninguno"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿En qué continente está Portugal?",
+            opciones:["Europa","América","Asia","África"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Qué deporte practica Cristiano Ronaldo?",
+            opciones:["Tenis","Fútbol","Baloncesto","Golf"],
+            correcta:1
+        },
+
+        {
+            pregunta:"¿Cuál es su principal función en el campo?",
+            opciones:["Atajar","Marcar goles","Arbitrar","Defender"],
+            correcta:1
+        },
+
+        {
+            pregunta:"¿Qué selección capitanea habitualmente?",
+            opciones:["Portugal","España","Brasil","Italia"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Cuál es su apodo más conocido?",
+            opciones:["CR7","O Fenómeno","La Pulga","El Tigre"],
+            correcta:0
+        }
+
+    ]
+},
+
+{
+    id:11,
+    nombre:"Bruno Fernandes",
+    pais:"Portugal",
+    probabilidad:10,
+    urlImagen:"img/bruno.jpg",
+
+    preguntas:[
+
+        {
+            pregunta:"¿De qué país es Bruno Fernandes?",
+            opciones:["Portugal","España","Brasil","Italia"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Cuál es su posición?",
+            opciones:["Portero","Centrocampista","Defensa","Delantero"],
+            correcta:1
+        },
+
+        {
+            pregunta:"¿Qué selección representa?",
+            opciones:["Portugal","Francia","España","Brasil"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿En qué continente está Portugal?",
+            opciones:["Europa","Asia","América","África"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Qué deporte practica?",
+            opciones:["Baloncesto","Tenis","Fútbol","Vóley"],
+            correcta:2
+        },
+
+        {
+            pregunta:"¿Cuál es su función principal?",
+            opciones:["Crear juego","Atajar","Defender el arco","Arbitrar"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Qué pie utiliza principalmente?",
+            opciones:["Derecho","Izquierdo","Ambos","Ninguno"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Qué selección nacional representa?",
+            opciones:["Portugal","España","Italia","Brasil"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿En qué zona del campo juega normalmente?",
+            opciones:["Centrocampo","Portería","Defensa central","Lateral"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Qué número ha usado frecuentemente con Portugal?",
+            opciones:["8","10","14","18"],
+            correcta:0
+        }
+
+    ]
+},
+
+{
+    id:12,
+    nombre:"James Rodríguez",
+    pais:"Colombia",
+    probabilidad:10,
+    urlImagen:"img/james.jpg",
+
+    preguntas:[
+
+        {
+            pregunta:"¿De qué país es James Rodríguez?",
+            opciones:["Colombia","Ecuador","Perú","Chile"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Cuál es su posición?",
+            opciones:["Centrocampista","Portero","Defensa","Delantero"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Qué selección representa?",
+            opciones:["Colombia","Brasil","Argentina","Uruguay"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Qué premio ganó en el Mundial 2014?",
+            opciones:["Bota de Oro","Balón de Oro","Guante de Oro","Puskás"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿En qué continente está Colombia?",
+            opciones:["Europa","América","Asia","África"],
+            correcta:1
+        },
+
+        {
+            pregunta:"¿Qué deporte practica?",
+            opciones:["Fútbol","Tenis","Baloncesto","Vóley"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Qué colores tiene la bandera de Colombia?",
+            opciones:["Amarillo, azul y rojo","Rojo y blanco","Azul y blanco","Verde y amarillo"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Qué función cumple principalmente?",
+            opciones:["Crear jugadas","Atajar","Arbitrar","Defender el arco"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Qué pie utiliza principalmente?",
+            opciones:["Izquierdo","Derecho","Ambos","Ninguno"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Qué selección representa internacionalmente?",
+            opciones:["Colombia","Ecuador","Perú","Chile"],
+            correcta:0
+        }
+
+    ]
+},
+
+{
+    id:13,
+    nombre:"Luis Díaz",
+    pais:"Colombia",
+    probabilidad:10,
+    urlImagen:"img/luisdiaz.jpg",
+
+    preguntas:[
+
+        {
+            pregunta:"¿De qué país es Luis Díaz?",
+            opciones:["Colombia","Ecuador","Brasil","Perú"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Cuál es su posición?",
+            opciones:["Extremo","Portero","Defensa","Centrocampista"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Qué selección representa?",
+            opciones:["Colombia","Argentina","Brasil","Chile"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Qué característica destaca de Luis Díaz?",
+            opciones:["Velocidad y regate","Atajadas","Arbitraje","Defensa aérea"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿En qué continente está Colombia?",
+            opciones:["Europa","Asia","América","África"],
+            correcta:2
+        },
+
+        {
+            pregunta:"¿Qué deporte practica?",
+            opciones:["Fútbol","Tenis","Baloncesto","Natación"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Qué colores tiene la bandera colombiana?",
+            opciones:["Amarillo, azul y rojo","Rojo y blanco","Azul y blanco","Verde y amarillo"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Qué pie utiliza principalmente?",
+            opciones:["Derecho","Izquierdo","Ambos","Ninguno"],
+            correcta:1
+        },
+
+        {
+            pregunta:"¿Cuál es su función principal?",
+            opciones:["Crear peligro y marcar goles","Atajar","Dirigir el partido","Defender el arco"],
+            correcta:0
+        },
+
+        {
+            pregunta:"¿Qué selección nacional representa?",
+            opciones:["Colombia","Perú","Ecuador","Chile"],
+            correcta:0
+        }
+
+    ]
 }
 
 ];
