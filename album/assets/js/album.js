@@ -267,11 +267,99 @@ crearJugador(
     goles:44,
     partidos:130
 },
-false,
+true,
 "Jugador importante de Francia"
 )
 
 );
+
+
+//Portugal
+
+cromosMundial.push(
+
+crearJugador(
+10,
+"Cristiano Ronaldo",
+"Portugal",
+"Delantero",
+"assets/img/jugadores/ronaldo.jpg",
+"assets/img/banderas/portugal.png",
+"#006600",
+{
+    goles:138,
+    partidos:221
+},
+true,
+"Maximo goleador historico de selecciones"
+)
+
+);
+
+cromosMundial.push(
+
+crearJugador(
+11,
+"Bruno Fernandes",
+"Portugal",
+"Centrocampista",
+"assets/img/jugadores/bruno.jpg",
+"assets/img/banderas/portugal.png",
+"#006600",
+{
+    goles:25,
+    partidos:78
+},
+true,
+"Uno de los líderes del mediocampo de Portugal."
+)
+
+);
+
+
+//Colombia
+
+cromosMundial.push(
+
+crearJugador(
+12,
+"James Rodríguez",
+"Colombia",
+"Centrocampista",
+"assets/img/jugadores/james.jpg",
+"assets/img/banderas/colombia.png",
+"#FCD116",
+{
+    goles:29,
+    partidos:112
+},
+true,
+"Ganador de la Bota de Oro del Mundial Brasil 2014."
+)
+
+);
+
+cromosMundial.push(
+
+crearJugador(
+13,
+"Luis Díaz",
+"Colombia",
+"Extremo",
+"assets/img/jugadores/diaz.jpg",
+"assets/img/banderas/colombia.png",
+"#FCD116",
+{
+    goles:18,
+    partidos:64
+},
+true,
+"Reconocido por su velocidad y habilidad en el uno contra uno."
+)
+
+);
+
+
 
 
 
