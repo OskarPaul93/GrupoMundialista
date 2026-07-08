@@ -13,7 +13,7 @@ const jugadoresJuego = [
     nombre:"Lionel Messi",
     pais:"Argentina",
     probabilidad:5,
-    urlImagen:"img/messi.jpg",
+    urlImagen:"../assets/img/jugadores/messi.jpg",
 
     preguntas:[
 
@@ -86,7 +86,7 @@ const jugadoresJuego = [
     nombre:"Emiliano Martínez",
     pais:"Argentina",
     probabilidad:10,
-    urlImagen:"img/dibu.jpg",
+    urlImagen:"../assets/img/jugadores/martinez.jpg",
 
     preguntas:[
 
@@ -159,7 +159,7 @@ const jugadoresJuego = [
     nombre:"Julián Álvarez",
     pais:"Argentina",
     probabilidad:10,
-    urlImagen:"img/julian.jpg",
+    urlImagen:"../assets/img/jugadores/alvarez.jpg",
 
     preguntas:[
 
@@ -232,7 +232,7 @@ const jugadoresJuego = [
     nombre:"Moisés Caicedo",
     pais:"Ecuador",
     probabilidad:10,
-    urlImagen:"img/caicedo.jpg",
+    urlImagen:"../assets/img/jugadores/caicedo.jpg",
 
     preguntas:[
 
@@ -303,7 +303,7 @@ const jugadoresJuego = [
     nombre:"Enner Valencia",
     pais:"Ecuador",
     probabilidad:10,
-    urlImagen:"img/enner.jpg",
+    urlImagen:"../assets/img/jugadores/valencia.jpg",
 
     preguntas:[
 
@@ -376,7 +376,7 @@ const jugadoresJuego = [
     nombre:"Neymar Jr.",
     pais:"Brasil",
     probabilidad:10,
-    urlImagen:"img/neymar.jpg",
+    urlImagen:"../assets/img/jugadores/neymar.jpg",
 
     preguntas:[
 
@@ -449,7 +449,7 @@ const jugadoresJuego = [
     nombre:"Vinícius Jr.",
     pais:"Brasil",
     probabilidad:10,
-    urlImagen:"img/vinicius.jpg",
+    urlImagen:"../assets/img/jugadores/vinicius.jpg",
 
     preguntas:[
 
@@ -522,7 +522,7 @@ const jugadoresJuego = [
     nombre:"Kylian Mbappé",
     pais:"Francia",
     probabilidad:10,
-    urlImagen:"img/mbappe.jpg",
+    urlImagen:"../assets/img/jugadores/mbappe.jpg",
 
     preguntas:[
 
@@ -593,7 +593,7 @@ const jugadoresJuego = [
     nombre:"Antoine Griezmann",
     pais:"Francia",
     probabilidad:10,
-    urlImagen:"img/griezmann.jpg",
+    urlImagen:"../assets/img/jugadores/griezmann.jpg",
 
     preguntas:[
 
@@ -665,7 +665,7 @@ const jugadoresJuego = [
     nombre:"Cristiano Ronaldo",
     pais:"Portugal",
     probabilidad:10,
-    urlImagen:"img/cristiano.jpg",
+    urlImagen:"../assets/img/jugadores/ronaldo.jpg",
 
     preguntas:[
 
@@ -737,7 +737,7 @@ const jugadoresJuego = [
     nombre:"Bruno Fernandes",
     pais:"Portugal",
     probabilidad:10,
-    urlImagen:"img/bruno.jpg",
+    urlImagen:"../assets/img/jugadores/bruno.jpg",
 
     preguntas:[
 
@@ -809,7 +809,7 @@ const jugadoresJuego = [
     nombre:"James Rodríguez",
     pais:"Colombia",
     probabilidad:10,
-    urlImagen:"img/james.jpg",
+    urlImagen:"../assets/img/jugadores/james.jpg",
 
     preguntas:[
 
@@ -881,7 +881,7 @@ const jugadoresJuego = [
     nombre:"Luis Díaz",
     pais:"Colombia",
     probabilidad:10,
-    urlImagen:"img/luisdiaz.jpg",
+    urlImagen:"../assets/img/jugadores/diaz.jpg",
 
     preguntas:[
 
